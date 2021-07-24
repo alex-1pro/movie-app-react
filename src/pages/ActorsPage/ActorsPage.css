@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+div.actors-page{
+    padding: 50px;
+}
+div>input.filter-input{
+    /* margin: 10px 20px 10px 20px ; */
+    margin: 0px auto;
+        
+}

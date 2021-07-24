@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import './ActorsPage.css'
 import CardComponent from '../../components/CardComponent/CardComponent';
 import ActorModel from '../../model/ActorModel';
+
 
 function ActorsPage() {
     const [actors, setActors] = useState([
@@ -9,17 +11,25 @@ function ActorsPage() {
         new ActorModel("Jennifer", "Aniston", new Date(1969, 2, 11), "https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY317_CR3,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0000098/?ref_=tt_cl_t_1"),
         new ActorModel("Sacha", "Baron Cohen", new Date(1971, 10, 13), "https://m.media-amazon.com/images/M/MV5BMTkzMTY4Nzc2NF5BMl5BanBnXkFtZTgwODc3MDI2MDE@._V1_UY317_CR11,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0056187/")
     ]);
-    // const names = actors.map(actor =><p>{ actor.firstName+ " "+ actor.age()}</p>);
-    // const date = new Date("October 13,1996");
-    const cards = actors.map(actor =><div className="col"> <CardComponent actor={actor} /> </div>)
-    // console.log(date);
+    const [filteredNames, setFilterNames] = useState(actors);
 
-    //  console.log(actors);
+
+    function filteredActors(e) {
+        setFilterNames(actors.filter(actor => {
+            return actor.firstName.toLowerCase().startsWith(e.target.value.toLowerCase());
+        }));
+    }
+
+    const cards = filteredNames.map(actor => <div className="col"> <CardComponent actor={actor} /> </div>)
+
     return (
-        <div className="container">
-            {/* <h1>Actors</h1> */}
-            <div className="row">
-            {cards}
+        <div className="actors-page">
+            <input type="text" className="form-control filter-input" placeholder="Filter by first and last name" onChange={filteredActors}></input>
+            <div className="container">
+                <h1>Actors</h1>
+                <div className="row">
+                    {cards}
+                </div>
             </div>
         </div>
     );
