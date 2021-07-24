@@ -6,8 +6,8 @@ class ActorModel {
         this.img = img;
         this.imdbLink = imdbLink;
     }
-    Age(birthday){
-        var ageDifMs = Date.now() - birthday.getTime();
+    age(){
+        var ageDifMs = Date.now() - this.birthday.getTime();
         var ageDate = new Date(ageDifMs); // miliseconds from epoch
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
