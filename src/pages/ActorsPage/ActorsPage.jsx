@@ -19,19 +19,18 @@ function ActorsPage() {
     const [sortBy, setSortBy] = useState("firstName");
 
     function filteredActors(e) {
-
-
-        if(e.target.value){
-        setFilterNames(actors.filter(actor => {
-            if (sortBy === "firstName") {
-                return actor.firstName.toLowerCase().startsWith(e.target.value.toLowerCase());
-            } else if (sortBy === "lastName") {
-                return actor.lastName.toLowerCase().startsWith(e.target.value.toLowerCase());
-            } else if (sortBy === "age") {
-                console.log( parseInt(e.target.value));
-                return (actor.age() >= parseInt(e.target.value)) ;
-            }
-        }));}
+        if (e.target.value) {
+            setFilterNames(actors.filter(actor => {
+                if (sortBy === "firstName") {
+                    return actor.firstName.toLowerCase().startsWith(e.target.value.toLowerCase());
+                } else if (sortBy === "lastName") {
+                    return actor.lastName.toLowerCase().startsWith(e.target.value.toLowerCase());
+                } else if (sortBy === "age") {
+                    console.log(parseInt(e.target.value));
+                    return (actor.age() >= parseInt(e.target.value));
+                }
+            }));
+        }
         else setFilterNames(actors);
     }
 
@@ -39,20 +38,20 @@ function ActorsPage() {
 
     return (
         <div className="actors-page">
-            <h1>Actors</h1>
-            <div className="filer-container">
-                <input type="text" className="form-control filter-input" placeholder="Filter by first and last name" onChange={filteredActors}></input>
-
-                <select className="form-select" value={sortBy} onChange={e => setSortBy(e.target.value)}>
-                    <option value="lastName">lastName</option>
-                    <option value="age">age</option>
-                    <option value="firstName">firstName</option>
-                </select>
-
-
-            </div>
+            <h1>Actors Page</h1>
             <div className="container">
-
+            <div className="row">
+                    <div className="col-sm-8 input">
+                        <input type="text" className="form-control filter-input" placeholder="Filter by first and last name" onChange={filteredActors}></input>
+                    </div>
+                    <div className="col-sm-4 select-sort">
+                        <select className="form-select" value={sortBy} onChange={e => setSortBy(e.target.value)}>
+                            <option value="lastName">last name</option>
+                            <option value="age">age</option>
+                            <option value="firstName">first name</option>
+                        </select>
+                    </div>
+                </div>
                 <div className="row">
                     {cards}
                 </div>
