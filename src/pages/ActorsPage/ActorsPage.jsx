@@ -27,7 +27,7 @@ function ActorsPage() {
                     return actor.lastName.toLowerCase().startsWith(e.target.value.toLowerCase());
                 } else if (sortBy === "age") {
                     console.log(parseInt(e.target.value));
-                    return (actor.age() >= parseInt(e.target.value));
+                    return (actor.age() === parseInt(e.target.value));
                 }
             }));
         }
