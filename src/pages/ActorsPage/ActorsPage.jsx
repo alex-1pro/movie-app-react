@@ -34,13 +34,28 @@ function ActorsPage() {
         else setFilterNames(actors);
     }
 
-    const cards = filteredNames.map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>)
+    //  const cards = filteredNames.map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>)
+    //The localeCompare() method returns a number indicating whether a reference string comes before, or after, or is the same as the given string in sort order.
+    function sortActors(){
+       if(sortBy === "firstName"){ 
+       return filteredNames.sort((a, b) => a.firstName.localeCompare(b.firstName, 'en', { sensitivity: 'base' }))
+        .map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>);
+       }else if(sortBy === "lastName"){
+           return filteredNames.sort((a, b) => a.lastName.localeCompare(b.lastName, 'en', { sensitivity: 'base' }))
+           .map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>);
+       }else if(sortBy === "age"){
+           return  filteredNames.sort((a, b) => a.age()-b.age())
+           .map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>);
+       }
 
+    }
+    
+    const cards =sortActors();
     return (
         <div className="actors-page">
             <h1>Actors Page</h1>
             <div className="container">
-            <div className="row">
+                <div className="row">
                     <div className="col-sm-8 input">
                         <input type="text" className="form-control filter-input" placeholder="Filter by first and last name" onChange={filteredActors}></input>
                     </div>
