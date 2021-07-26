@@ -34,7 +34,7 @@ function ActorsPage() {
         else setFilterNames(actors);
     }
 
-    const cards = filteredNames.map(actor => <div className="col"> <CardComponent actor={actor} /> </div>)
+    const cards = filteredNames.map(actor => <div className="col-12 col-md-6 col-lg-3"> <CardComponent actor={actor} /> </div>)
 
     return (
         <div className="actors-page">
