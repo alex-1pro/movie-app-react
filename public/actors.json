@@ -1,0 +1,58 @@
+[
+    {
+        "firstName": "Jackie",
+        "lastName": "Chan",
+        "birthday": "1954-4-7",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTk4MDM0MDUzM15BMl5BanBnXkFtZTcwOTI4MzU1Mw@@._V1_UY317_CR7,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0000329/?ref_=nv_sr_srsg_0"
+    }
+    ,{
+        "firstName": "Adam",
+        "lastName": "Sandler",
+        "birthday": "1966, 9, 9",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjQyNzM2MjM1Ml5BMl5BanBnXkFtZTcwMDE5NjI3Mg@@._V1_UY317_CR7,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0001191/"
+    }
+    ,{
+        "firstName": "Jennifer",
+        "lastName": "Aniston",
+        "birthday": "1969, 2, 11",
+        "img": "https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY317_CR3,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0000098/?ref_=tt_cl_t_1"
+    },
+    {
+        "firstName": "Sacha",
+        "lastName": "Baron Cohen",
+        "birthday": "1971, 10, 13",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTkzMTY4Nzc2NF5BMl5BanBnXkFtZTgwODc3MDI2MDE@._V1_UY317_CR11,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0056187/"
+    },
+    {
+        "firstName": "Angelina",
+        "lastName": "Jolie",
+        "birthday": "1975, 6, 4",
+        "img": "https://m.media-amazon.com/images/M/MV5BODg3MzYwMjE4N15BMl5BanBnXkFtZTcwMjU5NzAzNw@@._V1_UY317_CR22,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0001401/"
+    },
+    {
+        "firstName": "Seann",
+        "lastName": "William Scott",
+        "birthday": "1976, 10, 3",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjEzMjk1NTA1Ml5BMl5BanBnXkFtZTcwNjQyNjAwOQ@@._V1_UX214_CR0,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm0005405/?ref_=ttfc_fc_cl_t13"
+    },
+    {
+        "firstName": "Gal",
+        "lastName": "Gadot",
+        "birthday": "1985, 4, 30",
+        "img": "https://m.media-amazon.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY317_CR20,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm2933757/"
+    },
+    {
+        "firstName": "Margot",
+        "lastName": "Robbie",
+        "birthday": "1990, 7, 2",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTgxNDcwMzU2Nl5BMl5BanBnXkFtZTcwNDc4NzkzOQ@@._V1_UY317_CR12,0,214,317_AL_.jpg",
+        "imdbLink": "https://www.imdb.com/name/nm3053338/?ref_=nmls_hd"
+    }
+]
