@@ -1,0 +1,24 @@
+[
+    {
+      "movieName":"Joker",
+      "director":"Todd Phillips",
+      "mainStars": ["Joaquin Phoenix","Robert De Niro","Zazie Beetz"],
+      "lengthInMinutes" :"122",
+      "poster":"https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY720_.jpg"
+    },
+    {
+        "movieName":"American Pie 2",
+        "director":"J.B. Rogers",
+        "mainStars": ["Jason Biggs","Sean William Scott","Shannon Elizabeth"],
+        "lengthInMinutes" :"108",
+        "poster":"https://m.media-amazon.com/images/M/MV5BOTEyYjhiMjYtNjU3YS00NmQ4LTlhNTEtYTczNWY3MGJmNzE2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX810_.jpg"
+      },
+      {
+        "movieName":"The Suicide Squad",
+        "director":"James Gunn",
+        "mainStars": ["Margot Robbie","Idris Elba","John Cena"],
+        "lengthInMinutes" :"132",
+        "poster":"https://m.media-amazon.com/images/M/MV5BNGM3YzdlOWYtNjViZS00MTE2LWE1MWUtZmE2ZTcxZjcyMmU3XkEyXkFqcGdeQXVyODEyMTI1MjA@._V1_FMjpg_UX835_.jpg"
+      }
+]
+

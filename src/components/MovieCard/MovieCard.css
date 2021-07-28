@@ -1,0 +1,15 @@
+div>h1.movie-h{
+    color: blue;
+}
+div.poster-container{
+    width: 150px;
+    /* height: 100px; */
+}
+div.poster-container>img{
+    width: 100%;
+}
+.movie-container{
+    border: solid gray;
+    border-radius: 2%;
+
+}
