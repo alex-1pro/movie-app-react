@@ -1,3 +1,18 @@
 div>h1.h-homepage{
     color: brown;
 }
+/* div.container-carousel{
+    padding: 0 auto;
+
+} */
+.carousel {
+    width: 300px;;
+    /* height:500px; */
+    margin:0 auto ;
+    /* padding:0px 50px 20px 50px; */
+    padding: 0 auto;
+  }
+
+  .container-carousel{
+      background-color: #42454E;
+  }
